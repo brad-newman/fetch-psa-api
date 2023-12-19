@@ -11,7 +11,8 @@ This Python application provides a convenient way to interact with the PSA Card 
 - **CSV Ouput**: Stores retrieved card details in CSV format.
 
 ## Limitations
-- **No DNA Certs Support**: The application only parses the PSACert object, not the DNACert object (which contains details for cards signed in-person or otherwise not in the original manufacturing process). 
+- **No DNA Certs Support**: The application only parses the PSACert object, not the DNACert object (which contains details for cards signed in-person or otherwise not in the original manufacturing process).
+- **Only recent PSA cards have images**: PSA only started adding images to its certificate database in October 2021. I don't believe any cards graded before then will have images in the database. Any cert numbers that do not have corresponding images will still have its details populated into the `cert_details.csv` output file.
 
 ## Prerequisites
 - Python 3.x installed on your machine.
